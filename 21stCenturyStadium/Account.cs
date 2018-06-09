@@ -26,6 +26,31 @@ namespace _21stCenturyStadium
         /// Type of account user signed up for
         /// </summary>
         public string TypeOfAccount { get; set; }
+        /// <summary>
+        /// Payments made
+        /// </summary>
+        public decimal PaymentMethod { get; set; }
+        /// <summary>
+        /// Where to submit an event
+        /// </summary>
+        public string SubmittingArea { get; set; }
+        /// <summary>
+        /// Dates generated
+        /// </summary>
+        public DateTime CreatedDate { get; set; }
+        #endregion
+
+        #region Methods
+
+        public void Payment(decimal amount)
+        {
+            // Payment for purchase
+            PaymentMethod = amount;
+
+
+        }
+
+
         #endregion
     }
 }
